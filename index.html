@@ -27,13 +27,25 @@
         width: 50%;
         font-size: 1.25em
     }
+    p:hover, h1:hover, h2:hover, li:hover {
+        text-decoration: underline;
+        cursor: default;
+    }
     footer {
         margin-top: auto;
         display: flex;
         justify-content: space-around;
-        border: 1px solid black;
         background: #d3d3d375;
         padding: .2em
+    }
+    .footer-link {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+    }
+    .footer-link:hover {
+        box-shadow: .75px .75px black;
     }
 </style>
 <body>
@@ -60,10 +72,10 @@
         </section>
     </main>
     <footer>
-        <a href="https://github.com/maxiscoding28" target="_blank">
+        <a class="footer-link" href="https://github.com/maxiscoding28" target="_blank">
             <img src="github.svg" alt="GitHub" width="25px">
         </a>
-        <a href="https://www.linkedin.com/in/max-winslow/" target="_blank">
+        <a class="footer-link" href="https://www.linkedin.com/in/max-winslow/" target="_blank">
             <img src="linkedin.svg" alt="Linkedin" width="25px">
         </a>
     </footer>
