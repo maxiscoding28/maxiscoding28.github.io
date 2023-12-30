@@ -1,1 +1,69 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Winslow</title>
+    <!-- Add your stylesheets, scripts, or other head elements here -->
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: monospace;
+        margin: 0;
+    }
+    header, h2 {
+        text-align: center;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #content {
+        width: 50%;
+        font-size: 1.25em
+    }
+    footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+        background: #d3d3d375;
+        padding: .2em
+    }
+</style>
+<body>
+    <header>
+        <h1>Hello there 👋 </h1>
+        <!-- Add navigation or other header content here -->
+    </header>
+    <main>
+        <section>
+            <h2>My name is Max Winslow</h2>
+            <div id="content">
+                <p>I work in software support.</p>
+                <p>That means I spend a lot of time untangling the various knots people tie themselves into working with complex software.</p>
+                <p>I can't fix your problem but I can probably find it.</p>
+                <p>I currently work at <a href="https://www.hashicorp.com" target="_blank">HashiCorp</a> on the Vault team. It's fun.</p>
+                <p>I also like to build things in my spare time.</p>
+                <p>Here are a few of those things:
+                        <ul>
+                            <li>Thing 1</l1>
+                            <li>Thing 2</li>
+                        </ul>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/maxiscoding28" target="_blank">
+            <img src="github.svg" alt="GitHub" width="25px">
+        </a>
+        <a href="https://www.linkedin.com/in/max-winslow/" target="_blank">
+            <img src="linkedin.svg" alt="Linkedin" width="25px">
+        </a>
+    </footer>
