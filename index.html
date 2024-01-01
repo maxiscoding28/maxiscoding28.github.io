@@ -32,25 +32,32 @@
         cursor: default;
     }
     footer {
-        margin-top: auto;
-        display: flex;
-        justify-content: space-around;
-        background: #d3d3d375;
-        padding: .2em
-    }
-    .footer-link {
-        flex-grow: 1;
+        width: 100%;
         display: flex;
         justify-content: center;
-        border: 1px solid black;
     }
-    .footer-link:hover {
-        box-shadow: .75px .75px black;
+    .footer-link {
+        border: 1px solid lightslategray;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+    }
+    #github-link {
+        transform: rotate(140deg)
+    }
+    #linkedin-link {
+        transform: rotate(-85deg)       
+    }
+    #github-link:hover,
+    #linkedin-link:hover {
+        transform: rotate(0deg);
+        transition: transform .5s;
     }
 </style>
 <body>
     <header>
-        <h1>Hello there 👋 </h1>
+        <h1>Hello there 👋</h1>
         <!-- Add navigation or other header content here -->
     </header>
     <main>
@@ -72,10 +79,10 @@
         </section>
     </main>
     <footer>
-        <a class="footer-link" href="https://github.com/maxiscoding28" target="_blank">
+        <a id="github-link" class="footer-link" href="https://github.com/maxiscoding28" target="_blank">
             <img src="github.svg" alt="GitHub" width="25px">
         </a>
-        <a class="footer-link" href="https://www.linkedin.com/in/max-winslow/" target="_blank">
+        <a id="linkedin-link" class="footer-link" href="https://www.linkedin.com/in/max-winslow/" target="_blank">
             <img src="linkedin.svg" alt="Linkedin" width="25px">
         </a>
     </footer>
